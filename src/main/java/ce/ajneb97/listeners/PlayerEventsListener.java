@@ -453,6 +453,7 @@ public class PlayerEventsListener implements Listener {
                 ).checkEvent();
     }
 
+    /*
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onCloseInventory(InventoryCloseEvent event) {
         Player player = (Player) event.getPlayer();
@@ -461,7 +462,7 @@ public class PlayerEventsListener implements Listener {
                         new StoredVariable("%inventory_type%",event.getInventory().getType().name()),
                         new StoredVariable("%inventory_title%",ChatColor.stripColor(InventoryUtils.getViewTitle(event)))
                 ).checkEvent();
-    }
+    }*/
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onClickInventory(InventoryClickEvent event) {
